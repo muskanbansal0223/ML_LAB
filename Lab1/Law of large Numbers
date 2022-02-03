@@ -1,0 +1,14 @@
+//Law of Large Numbers 
+// Jupyter Notebook
+// Python Code
+
+def LawOfLarge(n):
+   
+    d=np.random.normal(0,1,int(n))
+    count=0
+    ans=0
+    for i in d:
+        if i>-1 and i<1:
+            count += 1
+            ans=count/int(n)*100
+    return ans
